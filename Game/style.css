@@ -1,0 +1,39 @@
+body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        font-family: "Arial", sans-serif;
+        background-color: rgb(240, 240, 181);
+        margin: 0;
+        flex-direction: column;
+}
+#gameboard {
+        display: grid;
+        grid-template-columns: repeat(4, 100px);
+        gap: 10px;
+}
+.card {
+        width: 100px;
+        height: 100px;
+        background-color: rgb(130, 165, 16);
+        color: black;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+        font-weight: bold;
+        cursor: pointer;
+}
+.hidden {
+        color: transparent;
+        background-color: #000000;
+}
+#msg {
+        font-size: 50px;
+        padding-top: 30px;
+        font-weight: 500;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+        color: rgb(0, 19, 78);
+}
